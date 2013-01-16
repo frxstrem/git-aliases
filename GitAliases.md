@@ -1,65 +1,74 @@
 # Git aliases
 
-### `git co`
+# `git co`
 
-Shorthand for `git checkout`.
+Shorthand for `git checkout`
+
 
 ```sh
 git config --global alias.co checkout
 ```
 
-### `git br`
+# `git br`
 
 Shorthand for `git branch`
+
 
 ```sh
 git config --global alias.br branch
 ```
 
-### `git undo`
+# `git undo`
 
 Shorthand for `git reset --hard`
 
-```sh
-git config --global alias.undo 'reset --hard'
-```
-
-### `git info`
-
-Show a nicely formatted summary of an object.
 
 ```sh
-git config --global alias.info "show --stat --pretty=format:'%C(yellow)%H%Cblue%d%n%Creset%s%n%Cgreen%cr %C(cyan)by %Cred%cn%Creset%n%-b%n%n'"
+git config --global alias.undo reset\ \-\-hard
 ```
 
-### `git lg`
+# `git info`
 
-`git log` with a graph.
+Show a nicely formatted summary of an object
+
 
 ```sh
-git config --global alias.lg "log --graph --date-order --pretty=format:'%C(yellow)%h%Creset %s %Cblue%d%Creset'"
+git config --global alias.info show\ \-\-stat\ \-\-pretty\=format\:\'\%C\(yellow\)\%H\%Cblue\%d\%n\%Creset\%s\%n\%Cgreen\%cr\ \%C\(cyan\)by\ \%Cred\%cn\%Creset\%n\%\-b\%n\%n\'
 ```
 
-### `git ll`
+# `git lg`
 
-`git log` with one line per commit and detailed information.
+`git log` with a tree graph
+
 
 ```sh
-git config --global alias.ll "log --date-order --pretty=format:'%C(yellow)%h %C(cyan)[%Cgreen%cr%C(cyan) by %Cred%cn%C(cyan)]%Creset %s %Cblue%d%Creset'"
+git config --global alias.lg log\ \-\-graph\ \-\-date\-order\ \-\-pretty\=format\:\'\%C\(yellow\)\%h\%Creset\ \%s\ \%Cblue\%d\%Creset\'
 ```
 
-### `git changes`
+# `git ll`
 
-`git diff` with file list.
+`git log` with detailed oneline summary
+
 
 ```sh
-git config --global alias.changes 'diff --name-status -r'
+git config --global alias.ll log\ \-\-date\-order\ \-\-pretty\=format\:\'\%C\(yellow\)\%h\ \%C\(cyan\)\[\%Cgreen\%cr\%C\(cyan\)\ by\ \%Cred\%cn\%C\(cyan\)\]\%Creset\ \%s\ \%Cblue\%d\%Creset\'
 ```
 
-### `git diffstat`
+# `git changes`
 
-`git diff` with file list and statistics.
+Show list of changed files
+
 
 ```sh
-git config --global alias.diffstat 'diff --stat -r'
+git config --global alias.changes diff\ \-\-name\-status\ \-r
 ```
+
+# `git diffstat`
+
+Show file change stats
+
+
+```sh
+git config --global alias.diffstat diff\ \-\-stat\ \-r
+```
+
