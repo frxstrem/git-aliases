@@ -1,7 +1,8 @@
 #!/usr/bin/python
 # encoding: utf-8
 
-from re import escape
+import pipes
+escape = pipes.quote
 
 if __name__ != '__main__': exit()
 
@@ -25,6 +26,7 @@ inst.write("# install git aliases\n\n")
 doc.write("# Git aliases\n\n")
 
 for (a, c, d) in commands:
+	print 'Command: git %s' % (a,)
 	inst.write("git config --global	alias.%s %s\n" % (a, escape(c)))
 	doc.write("# `git %s`\n\n" % (a,))
 	doc.write("%s\n\n" % (d,))
