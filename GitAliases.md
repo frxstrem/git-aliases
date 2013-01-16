@@ -1,6 +1,6 @@
 # Git aliases
 
-## `git co`
+### `git co`
 
 Shorthand for `git checkout`.
 
@@ -8,7 +8,7 @@ Shorthand for `git checkout`.
 git config --global alias.co checkout
 ```
 
-## `git br`
+### `git br`
 
 Shorthand for `git branch`
 
@@ -16,7 +16,7 @@ Shorthand for `git branch`
 git config --global alias.br branch
 ```
 
-## `git undo`
+### `git undo`
 
 Shorthand for `git reset --hard`
 
@@ -24,7 +24,7 @@ Shorthand for `git reset --hard`
 git config --global alias.undo 'reset --hard'
 ```
 
-## `git info`
+### `git info`
 
 Show a nicely formatted summary of an object.
 
@@ -32,7 +32,7 @@ Show a nicely formatted summary of an object.
 git config --global alias.info "show --stat --pretty=format:'%C(yellow)%H%Cblue%d%n%Creset%s%n%Cgreen%cr %C(cyan)by %Cred%cn%Creset%n%-b%n%n'"
 ```
 
-## `git lg`
+### `git lg`
 
 `git log` with a graph.
 
@@ -40,7 +40,7 @@ git config --global alias.info "show --stat --pretty=format:'%C(yellow)%H%Cblue%
 git config --global alias.lg "log --graph --date-order --pretty=format:'%C(yellow)%h%Creset %s %Cblue%d%Creset'"
 ```
 
-## `git ll`
+### `git ll`
 
 `git log` with one line per commit and detailed information.
 
@@ -48,7 +48,7 @@ git config --global alias.lg "log --graph --date-order --pretty=format:'%C(yello
 git config --global alias.ll "log --date-order --pretty=format:'%C(yellow)%h %C(cyan)[%Cgreen%cr%C(cyan) by %Cred%cn%C(cyan)]%Creset %s %Cblue%d%Creset'"
 ```
 
-## `git changes`
+### `git changes`
 
 `git diff` with file list.
 
@@ -56,7 +56,7 @@ git config --global alias.ll "log --date-order --pretty=format:'%C(yellow)%h %C(
 git config --global alias.changes 'diff --name-status -r'
 ```
 
-## `git diffstat`
+### `git diffstat`
 
 `git diff` with file list and statistics.
 
