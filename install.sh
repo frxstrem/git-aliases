@@ -8,7 +8,7 @@ git config --global	alias.br branch
 echo 'Installing git undo'
 git config --global	alias.undo 'reset --hard'
 echo 'Installing git info'
-git config --global	alias.info 'show --stat --pretty=format:'"'"'%C(yellow)%H%Cblue%d%n%Creset%s%n%Cgreen%cr %C(cyan)by %Cred%cn%Creset%n%-b%n%n'"'"''
+git config --global	alias.info 'show --stat --pretty=format:'"'"'%C(yellow)%H%Cblue%d%n%Creset%s%n%Cgreen%cr %C(cyan)by %Cred%cn <%ce>%Creset%n%-b%n%n'"'"''
 echo 'Installing git lg'
 git config --global	alias.lg 'log --graph --date-order --pretty=format:'"'"'%C(yellow)%h%Creset %s %Cblue%d%Creset'"'"''
 echo 'Installing git ll'

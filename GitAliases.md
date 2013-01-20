@@ -33,7 +33,7 @@ Show a nicely formatted summary of an object
 
 
 ```sh
-git config --global alias.info 'show --stat --pretty=format:'"'"'%C(yellow)%H%Cblue%d%n%Creset%s%n%Cgreen%cr %C(cyan)by %Cred%cn%Creset%n%-b%n%n'"'"''
+git config --global alias.info 'show --stat --pretty=format:'"'"'%C(yellow)%H%Cblue%d%n%Creset%s%n%Cgreen%cr %C(cyan)by %Cred%cn <%ce>%Creset%n%-b%n%n'"'"''
 ```
 
 # `git lg`
