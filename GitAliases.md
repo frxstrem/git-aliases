@@ -72,3 +72,12 @@ Show file change stats
 git config --global alias.stat 'diff --stat -r'
 ```
 
+# `git squash`
+
+Squash commits
+
+
+```sh
+git config --global alias.squash '!f(){[$# -gt 0]||{false;exit;};git reset --soft "$1"&&{shift;git commit "$@";};};f'
+```
+
