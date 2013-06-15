@@ -6,4 +6,4 @@ lg´log --graph --date-order --pretty=format:'%C(yellow)%h%Creset %s %Cblue%d%Cr
 ll´log --date-order --pretty=format:'%C(yellow)%h %C(cyan)[%Cgreen%cr%C(cyan) by %Cred%an%C(cyan)]%Creset %s%Cblue%d%Creset'´`git log` with detailed oneline summary
 changes´diff --name-status -r´Show list of changed files
 stat´diff --stat -r´Show file change stats
-squash´!f(){[$# -gt 0]||{false;exit;};git reset --soft "$1"&&{shift;git commit "$@";};};f´Squash commits
+squash´!f() { [ $# -gt 0 ] || { false; exit; }; git reset --soft "$1" && { shift; git commit "$@"; }; }; f´Squash commits
