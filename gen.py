@@ -18,7 +18,7 @@ for line in fp:
 fp.close()
 
 inst = open('install.sh', 'w')
-doc = open('GitAliases.md', 'w')
+doc = open('README.md', 'w')
 
 inst.write("#!/bin/sh\n")
 inst.write("# install git aliases\n\n")
