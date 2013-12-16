@@ -11,7 +11,7 @@ fp = open('aliases', 'r')
 commands = []
 
 for line in fp:
-	n = line.split('´', 3)
+	n = line.split('~', 3)
 	if len(n) < 3: continue
 	commands.append(n)
 

@@ -74,7 +74,7 @@ git config --global alias.stat 'diff --stat -r'
 
 # `git squash`
 
-Squash commits
+Squash multiple commits into one
 
 
 ```sh
