@@ -12,7 +12,7 @@ git config --global	alias.info 'show --stat --pretty=format:'"'"'%C(yellow)%H%Cb
 echo 'Installing git lg'
 git config --global	alias.lg 'log --graph --date-order --pretty=format:'"'"'%C(yellow)%h %C(bold)%G?%Creset %s %Cblue%d%Creset'"'"''
 echo 'Installing git ll'
-git config --global	alias.ll 'log --date-order --pretty=format:'"'"'%C(yellow)%h %C(bold)%G? %Creset%C(cyan)[%Cgreen%ar%C(cyan) by %Cred%an%C(cyan)]%Creset %s%Cblue%d%Creset'"'"''
+git config --global	alias.ll 'log --date-order --pretty=format:'"'"'%C(yellow)%h %C(bold)%G? %Creset%C(cyan)[%Cgreen%ad%C(cyan) by %Cred%an%C(cyan)]%Creset %s%Cblue%d%Creset'"'"' --date=format:'"'"'%e %b %Y %H:%M'"'"''
 echo 'Installing git changes'
 git config --global	alias.changes 'diff --name-status -r'
 echo 'Installing git stat'

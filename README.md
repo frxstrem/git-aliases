@@ -51,7 +51,7 @@ git config --global alias.lg 'log --graph --date-order --pretty=format:'"'"'%C(y
 
 
 ```sh
-git config --global alias.ll 'log --date-order --pretty=format:'"'"'%C(yellow)%h %C(bold)%G? %Creset%C(cyan)[%Cgreen%ar%C(cyan) by %Cred%an%C(cyan)]%Creset %s%Cblue%d%Creset'"'"''
+git config --global alias.ll 'log --date-order --pretty=format:'"'"'%C(yellow)%h %C(bold)%G? %Creset%C(cyan)[%Cgreen%ad%C(cyan) by %Cred%an%C(cyan)]%Creset %s%Cblue%d%Creset'"'"' --date=format:'"'"'%e %b %Y %H:%M'"'"''
 ```
 
 # `git changes`

@@ -33,7 +33,7 @@ for (a, c, d) in commands:
 	doc.write("%s\n\n" % (d,))
 	doc.write("```sh\ngit config --global alias.%s %s\n```\n\n" % (a, escape(c)))
 
-print 'Install with ./install.sh'
+print 'Install with \'sh install.sh\''
 
 inst.close()
 doc.close()
