@@ -42,7 +42,7 @@ git config --global alias.info 'show --stat --pretty=format:'"'"'%C(yellow)%H%Cb
 
 
 ```sh
-git config --global alias.lg 'log --graph --date-order --pretty=format:'"'"'%C(yellow)%h %C(bold)%G?%Creset %s %Cblue%d%Creset'"'"''
+git config --global alias.lg 'log --graph --date-order --pretty=format:'"'"'%C(yellow)%h %C(bold)%G?%Creset %s%Cblue%d%Creset'"'"''
 ```
 
 # `git ll`
