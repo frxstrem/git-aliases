@@ -28,7 +28,7 @@ doc.write("# Git aliases\n\n")
 for (a, c, d) in commands:
 	print 'Generating alias: git %s' % (a,)
 	inst.write("echo %s\n" % escape('Installing git %s' % (a,)))
-	inst.write("git config --global	alias.%s %s\n" % (a, escape(c)))
+	inst.write("git config --global alias.%s %s\n" % (a, escape(c)))
 	doc.write("# `git %s`\n\n" % (a,))
 	doc.write("%s\n\n" % (d,))
 	doc.write("```sh\ngit config --global alias.%s %s\n```\n\n" % (a, escape(c)))
