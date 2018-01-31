@@ -81,3 +81,30 @@ Squash commits
 git config --global alias.squash '!f() { [ $# -gt 0 ] || { false; exit; }; git reset --soft "$1" && { shift; git commit "$@"; }; }; f'
 ```
 
+# `git head`
+
+Show current commit
+
+
+```sh
+git config --global alias.head 'log -n 1 HEAD --date-order --pretty=format:'"'"'%C(yellow)%h %C(bold)%G? %Creset%C(cyan)[%Cgreen%ad%C(cyan) by %Cred%an%C(cyan)]%Creset %s%Cblue%d%Creset'"'"' --date=format:'"'"'%e %b %Y %H:%M'"'"''
+```
+
+# `git gpginfo`
+
+Show GPG signature for current commit
+
+
+```sh
+git config --global alias.gpginfo 'show --pretty=format:'"'"'%C(yellow)%H%Creset%n%GG'"'"''
+```
+
+# `git amend`
+
+Amend previous commit
+
+
+```sh
+git config --global alias.amend 'commit --amend'
+```
+
