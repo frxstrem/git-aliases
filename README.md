@@ -1,5 +1,7 @@
 # Git aliases
 
+Run `sh ./install.sh` to install all.
+
 # `git co`
 
 Shorthand for `git checkout`

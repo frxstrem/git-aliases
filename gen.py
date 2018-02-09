@@ -24,6 +24,7 @@ inst.write("#!/bin/sh\n")
 inst.write("# install git aliases\n\n")
 
 doc.write("# Git aliases\n\n")
+doc.write("Run `sh ./install.sh` to install all.\n\n")
 
 for (a, c, d) in commands:
 	print 'Generating alias: git %s' % (a,)
