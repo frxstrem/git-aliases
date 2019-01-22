@@ -110,3 +110,12 @@ Amend previous commit
 git config --global alias.amend 'commit --amend'
 ```
 
+# `git pushup`
+
+Push to origin
+
+
+```sh
+git config --global alias.pushup '!git push -u origin $(git rev-parse --abbrev-ref HEAD)'
+```
+
